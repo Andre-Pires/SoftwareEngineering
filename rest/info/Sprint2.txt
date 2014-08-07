@@ -1,0 +1,8 @@
+Sprint 2
+========
+
+Este sprint não correu como o esperado.
+
+A principal razão foi o facto de nos surgirem uma série de dúvidas que nos
+fizeram adiar a implementação do projecto até que conseguíssemos comunicar
+com o corpo docente.

@@ -1,0 +1,91 @@
+Product Backlog Estimation
+==========================
+
+-----------------------------------------------
+Criar dados de exemplo dos clientes
+- Tempo Estimado: 1h.
+-----------------------------------------------
+
+    ------------------------------------------
+    O NIF da mariazinha tem de ser 2222.
+
+    -----------------------------------------
+    O NIF do zeze tem de ser 1111.
+    
+    -----------------------------------------
+    Criar novo cliente ‘alice’ com os respectivos dados 
+    (nome: ‘Alice Alves’, password: ‘aaa’, e-mail: ‘alice.alves@sonet.pt’, NIF: ‘1001, morada: ‘Aveiro, Portugal’)
+    
+    -----------------------------------------
+    Criar novo cliente ‘bruno’ com os respectivos dados
+    (nome: ‘Bruno Bento’, password: ‘bbb’, e-mail: ‘bruno.bento@sonet.pt’, NIF: ‘1002’, morada: ‘Beja, Portugal’)
+    
+    -----------------------------------------
+    Criar novo cliente ‘carlos’ com os respectivos dados
+    (nome: ‘Carlos Calado’, password: ‘ccc’, e-mail: ‘carlos.calado@sonet.pt’, NIF: ‘1003’, morada: ‘Coimbra, Portugal’)
+    
+
+-----------------------------------------------
+Um cliente tem de poder utilizar cheques refeição. Esse cliente deve ser identificado nesses cheques com o seu nome de utilizador.
+- Tempo Estimado: 1h.
+
+----------------------------------------------
+O tabuleiro de compras tem que ficar vazio depois da compra ser finalizada.
+- Tempo Estimado: 1h.
+
+----------------------------------------------
+Tem que haver uma funcionalidade para obter o tabuleiro de compras do cliente.
+- Tempo Estimado: 2h.
+
+----------------------------------------------
+Tem que haver uma funcionalidade para fazer verificação dos dados de login.
+- Tempo Estimado: 2h.
+
+---------------------------------------------
+Tem que haver uma funcionalidade para procurar todos os pratos existentes de um determinado tipo.
+- Tempo Estimado: 4h.
+
+
+---------------------------------------------
+A aplicação deverá ter uma interface web para ser usada pelo cliente.
+- Tempo Estimado: 3 dias (20 horas, incluindo criar estrutura base com o GWT).
+
+    --------------------------------------------
+    O cliente deve poder fazer login no portal utilizando o seu nome de utilizador e password.
+    - Tempo Estimado: 2h. 
+    
+    --------------------------------------------
+    O cliente tem de poder ver quais os restaurantes registados no portal.
+    - Tempo Estimado: 2h.
+
+    --------------------------------------------
+    O cliente tem de poder visualizar o menu de um restaurante.
+    - Tempo Estimado: 2h. 
+
+    --------------------------------------------
+    O cliente tem de poder adicionar um prato ao seu tabuleiro de compras.
+    - Tempo Estimado: 2h.
+
+    --------------------------------------------
+    O cliente tem de poder ver o conteúdo do seu tabuleiro de compras.
+    - Tempo Estimado: 2h.
+
+    -------------------------------------------
+    O cliente tem de poder alterar a quantidade de um prato existente no seu tabuleiro de compras.
+    - Tempo Estimado: 2h.
+
+    ------------------------------------------
+    O cliente tem de poder pagar as compras registadas no seu tabuleiro de compras com o seu saldo.
+    - Tempo Estimado: 2h.
+
+-----------------------------------------
+Acrescentar acção: Realizar o pagamento do tabuleiro de compras do cliente ‘zeze’ utilizando o cheque de refeição com o identificador ‘19’.
+- Tempo Estimado: 2h.
+
+
+-----------------------------------------
+Acrescentar acção: Mostrar o conteúdo do tabuleiro de compra do ‘zeze’.
+- Tempo Estimado: 1h.
+
+Total: 5 dias (34 horas).
+

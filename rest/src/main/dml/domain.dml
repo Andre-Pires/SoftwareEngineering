@@ -1,0 +1,145 @@
+package pt.ist.rest.domain;
+
+class PortalDeRestaurantes {
+	int idPrato;
+	int precoMaximo;
+	int numSeq;
+	int numSerie;
+	int nifPortal;
+	String nomePortal;
+	boolean pediuSerie;
+}
+
+class Restaurante {
+	String nome;
+	String morada;
+}
+
+class Prato {
+	String nome;
+	int preco;
+	int id;
+	int calorias;
+}
+
+class Alimento {
+	String descricao;
+	String tipo;
+}
+
+class Utilizador {
+	String username;
+	String password;
+	String nome;
+}
+
+class Cliente extends Utilizador {
+	String morada;
+	String email;
+	int nif;
+	int saldo;
+	int idCompra;
+}
+
+class Gestor extends Utilizador;
+
+class Compra {
+	int totalCompra;
+	int id;
+	boolean isFinalizada;
+	int nifCliente;
+	int iva;
+	DateTime dataEmissao;
+	int numSerie;
+	int numSeq;
+	String emissor;
+	int nifEmissor;
+}
+    
+
+class QuantidadePrato {
+	int quantidade;
+}
+
+relation PortalContainsRestaurants {
+	PortalDeRestaurantes playsRole portal {
+		multiplicity 1;
+	}
+	Restaurante playsRole restaurante {
+		multiplicity *;
+	}
+}
+
+relation RestauranteContainsPrato {
+	Restaurante playsRole restaurante {
+		multiplicity 1;
+	}
+	Prato playsRole prato {
+		multiplicity *;
+	}
+}
+
+relation PratoContainsAlimento {
+	Prato playsRole prato {
+		multiplicity *;
+	}
+	Alimento playsRole alimento {
+		multiplicity *;
+	}
+}
+
+relation PortalContainsUtilizador {
+	PortalDeRestaurantes playsRole portal {
+		multiplicity 1;
+	}
+	Utilizador playsRole utilizador {
+		multiplicity *;
+	}
+}
+
+relation ClienteContainsCompraFinalizada {
+	Cliente playsRole cliente {
+		multiplicity 1;
+	}
+	Compra playsRole compra {
+		multiplicity *;
+	}
+}
+
+relation CompraContainsQuantidadePrato {
+	Compra playsRole compra {
+		multiplicity 1;
+	}
+	QuantidadePrato playsRole quantidadePrato {
+		multiplicity *;
+	}
+}
+
+relation PratoContainsQuantidadePrato {
+	Prato playsRole prato {
+		multiplicity 1;
+	}
+	QuantidadePrato playsRole quantidadePrato {
+		multiplicity *;
+	}
+}
+
+relation Gostos {
+	Cliente playsRole cliente {
+		multiplicity *;
+	}
+	Prato playsRole prato {
+		multiplicity *;
+	}
+
+
+}
+
+relation GestorContainsRestaurante {
+	Restaurante playsRole restaurante {
+		multiplicity 1;
+	}
+	Gestor playsRole gestor {
+		multiplicity *;
+	}
+}

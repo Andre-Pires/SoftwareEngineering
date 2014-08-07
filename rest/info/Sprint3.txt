@@ -1,0 +1,3 @@
+O Sprint 3 correu bem no seu geral. No entanto, algumas estimativas não foram
+totalmente bem ponderadas o que deu origem a que coisas que demoraram algum tempo a fazer
+pusessem em causa a execução de outras que, consequentemente, passaram para o Sprint 4.
